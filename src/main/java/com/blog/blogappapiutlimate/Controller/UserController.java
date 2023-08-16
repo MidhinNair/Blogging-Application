@@ -62,9 +62,15 @@ public class UserController {
         return ResponseEntity.ok (updateUser);
     }
     //Delete - delete userc
+<<<<<<< HEAD
     @DeleteMapping("/{uId}")
     public  ResponseEntity<ApiResponse> deteteUser(  @PathVariable Integer uId){
         this.userService.deleteUse (uId);
+=======
+    @DeleteMapping("/{userId}")
+    public  ResponseEntity<ApiResponse> deteteUser(  @PathVariable Integer userId){
+        this.userService.deleteUse (userId);
+>>>>>>> 3f19c96 (Post Api are created.implemented pagination in getAllPost(). by using PageRequest)
         return new ResponseEntity(new ApiResponse ("User deleted successfully",true),HttpStatus.OK);
     }
 
