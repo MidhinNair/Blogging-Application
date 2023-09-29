@@ -1,26 +1,11 @@
 package com.blog.blogappapiutlimate.Model;
 
-<<<<<<< HEAD
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import lombok.Data;
 
-import java.awt.*;
-
-
-public class Post extends Base {
-    private String title;
-    private String content;
-    private String image;
-    private Category category;
-    private User user;
-=======
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
-
 @Entity
 @Table(name="posts")
 @Data
@@ -39,5 +24,5 @@ public class Post extends Base {
     @ManyToOne
     private User user;
 
->>>>>>> 3f19c96 (Post Api are created.implemented pagination in getAllPost(). by using PageRequest)
+
 }
